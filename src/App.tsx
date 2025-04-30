@@ -3,7 +3,7 @@ import ControlPanel from "./components/ControlPanel";
 import { useWindowSize } from "./hooks/useWindowSize";
 import GraphCanvas from "./components/GraphCanvas";
 
-const cellSize = 20;
+const cellSize = 15;
 
 export default function App() {
   const [p, setP] = useState(0);
@@ -12,7 +12,7 @@ export default function App() {
   const graphHeight = height;
 
   return (
-    <div className="flex h-screen w-screen bg-[#fef5e3] relative">
+    <div className="flex h-screen w-screen bg-black relative">
       <GraphCanvas
         p={p}
         width={graphWidth}
