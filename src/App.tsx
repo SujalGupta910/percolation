@@ -3,7 +3,7 @@ import ControlPanel from "./components/ControlPanel";
 import { useWindowSize } from "./hooks/useWindowSize";
 import GraphCanvas from "./components/GraphCanvas";
 
-const cellSize = 10;
+const cellSize = 20;
 
 export default function App() {
   const [p, setP] = useState(0);

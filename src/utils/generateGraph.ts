@@ -45,14 +45,15 @@ function generateWeightedEdges(cols: number, rows: number): CachedGraph {
         edges.push({
           from: id,
           to: `${x + 1},${y}`,
-          weight: parseFloat(Math.random().toFixed(2)),
+          weight: parseFloat((Math.floor(Math.random() * 100) / 100).toFixed(2))
+
         });
       }
       if (y < rows - 1) {
         edges.push({
           from: id,
           to: `${x},${y + 1}`,
-          weight: parseFloat(Math.random().toFixed(2)),
+          weight: parseFloat((Math.floor(Math.random() * 100) / 100).toFixed(2))
         });
       }
     }
